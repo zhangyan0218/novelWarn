@@ -10,7 +10,7 @@ import java.util.Map;
 public class DBUtil {
 	private static String Username = "";
 	private static String Password = "";
-	private static String appName = "novelwar";
+	private static String appName = "novelwarn";
 	
 	static{
 		Map<String,String> map = ReadProperties.readProperties(null);
@@ -53,8 +53,6 @@ public class DBUtil {
 	public static Connection getCon(){
 		//app_name为创建的应用名
 	    String URL="jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_"+appName;
-//	    	   URL="jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_database1";
-	    // 通过SaeUserInfo提供的静态方法获取应用的access_key和secret_key  对应的SaeUserInfo是自己创建的，使用SAE提供的key
 	    String Driver="com.mysql.jdbc.Driver";
 	    try {
 			Class.forName(Driver).newInstance();
