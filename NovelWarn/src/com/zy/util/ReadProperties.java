@@ -33,6 +33,7 @@ public class ReadProperties {
 		map.put("saeAccessKey", properties.getProperty("saeAccessKey"));
 		map.put("sarSecretKey", properties.getProperty("sarSecretKey"));
 		map.put("saeAppName", properties.getProperty("saeAppName"));
+		map.put("saeUrl", properties.getProperty("saeUrl"));
 		
 		return map;
 	}

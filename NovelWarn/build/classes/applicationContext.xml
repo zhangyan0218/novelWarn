@@ -26,7 +26,7 @@
 	<!-- ======================== 调度触发器 ======================== -->  
 	<bean id="qtzJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">  
 	    <property name="jobDetail" ref="qtzJobMethod"></property>  			<!-- 指定调用任务类的执行方法 -->
-	    <property name="cronExpression" value="0/5 * * * * ?"></property>   <!-- 调用的时机   这里是每隔五秒调用一次-->
+	    <property name="cronExpression" value="0 0,15,30,45 * * * ?"></property>   <!-- 调用的时机   这里是每隔五秒调用一次-->
 	</bean>  
 
 	<!-- ======================== 调度工厂 ======================== -->  

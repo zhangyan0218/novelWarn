@@ -6,7 +6,7 @@ import javax.activation.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-public class SendMail {
+public class SendMail{
 
 	private MimeMessage mimeMsg; // MIME邮件对象
 	private Session session; // 邮件会话对象

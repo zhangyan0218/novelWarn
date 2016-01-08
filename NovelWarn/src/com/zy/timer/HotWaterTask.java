@@ -1,5 +1,7 @@
 package com.zy.timer;
 
+import com.zy.jsoupCatch.JsoupCatch;
+
 
 public class HotWaterTask{
 
@@ -7,7 +9,10 @@ public class HotWaterTask{
 	public void execute(){
 		Long nowTime = System.currentTimeMillis();
 		
-		System.out.println("定时器执行，间隔" + (nowTime - lastTime )+"毫秒");
+		System.out.println("定时器执行，间隔" + (nowTime - lastTime )/1000+"秒");
+		
+		JsoupCatch jc = new JsoupCatch();
+		jc.start();
 		
 		lastTime = nowTime;
 	}
